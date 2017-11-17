@@ -2,6 +2,12 @@
 
 
 [[projects]]
+  branch = "master"
+  name = "github.com/eawsy/aws-lambda-go-core"
+  packages = ["service/lambda/runtime"]
+  revision = "e26eed6aa244a3d45aa693816a9c5faf39390fcd"
+
+[[projects]]
   name = "github.com/julienschmidt/httprouter"
   packages = ["."]
   revision = "8c199fb6259ffc1af525cc3ad52ee60ba8359669"
@@ -16,6 +22,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "56fb167f1c4363554d2582cdebba231cf78ea99d5464f01766c308f1730b1d9f"
+  inputs-digest = "e6ffa2ffcfb63c5e587530802cc79bc528e9baf9ae5fca072004d03e1c34065b"
   solver-name = "gps-cdcl"
   solver-version = 1

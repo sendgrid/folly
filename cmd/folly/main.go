@@ -13,9 +13,23 @@ import (
 	"syscall"
 	"time"
 
+	lambda "github.com/eawsy/aws-lambda-go-core/service/lambda/runtime"
 	"github.com/julienschmidt/httprouter"
 	"github.com/kelseyhightower/envconfig"
 )
+
+// Handle is the entry point for a Lambda function instance.
+func Handle(evt interface{}, ctx *lambda.Context) (string, error) {
+	cfg = new(Config)
+	err := envconfig.Process("FOLLY", cfg)
+	if err != nil {
+		log.Printf("Error loading configuration: %v", err)
+		return "Error loading configuration", err
+	}
+	cc = make(chan int, 1)
+	work()
+	return "Success", nil
+}
 
 var (
 	cfg *Config

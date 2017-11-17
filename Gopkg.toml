@@ -6,3 +6,7 @@
 [[constraint]]
   name = "github.com/kelseyhightower/envconfig"
   version = "1.3.0"
+
+[[constraint]]
+  name = "github.com/eawsy/aws-lambda-go-shim"
+  revision = "a4469ec1caa84db0ff63709fddfc510dd8d5654b"
